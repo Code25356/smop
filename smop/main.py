@@ -47,7 +47,7 @@ def main():
         try:
             if options.verbose:
                 print(i, options.filename)
-            if not options.filename.endswith(".jpeg"):
+            if not options.filename.endswith(".m"):
                 print("\tIgnored: '%s' (unexpected file type)" %
                       options.filename)
                 continue
