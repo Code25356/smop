@@ -28,7 +28,7 @@ def decode(self):
     return r
 
 def encode(s):
-    return "".join(c+"_" if c.isupper() or c=="_" else c.upper() for c in s)
+    return "".join(c+"__" if c.isupper() or c=="_" else c.upper() for c in s)
 
 def postorder(u):
     if isinstance(u,node):
