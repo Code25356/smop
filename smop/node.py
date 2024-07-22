@@ -19,7 +19,7 @@ def decode(self):
     r = ""
     s = self.name
     while s:
-        if len(s) >= 2 and s[0] == "_":
+        if len(s) >= 1 and s[0] == "_":
             r += s[1].upper()
             s = s[2:]
         else:
