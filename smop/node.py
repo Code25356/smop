@@ -19,9 +19,11 @@ def decode(self):
     r = ""
     s = self.name
     while s:
-        if len(s) >= 1 and s[0] == "_":
+        if len(s) > 1 and s[0] == "_":
             r += s[1].upper()
             s = s[2:]
+        elif s == "_":
+            s = s[1:]
         else:
             r += s[0].lower()
             s = s[1:]
@@ -416,3 +418,4 @@ def is_const(self):
 def is_const(self):
     return not self.args or self.args[0].is_const()
 # vim: ts=8:sw=4:et
+
