@@ -25,6 +25,6 @@ setup(
     #package_dir = {'':'src'},
     #test_suite = "smop.testsuite.test_lexer",
     #include_package_data = True,
-    #package_data = { 'smop': ['*.m', 'Makefile'], },
+#    #package_data = { 'smop': ['*.m', 'Makefile'], },
     install_requires = ['pytest', 'ply', 'numpy', 'scipy', 'networkx'],
 )
